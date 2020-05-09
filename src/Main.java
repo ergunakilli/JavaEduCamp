@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args){
-        String[] sehirler1 = new String[]{"İstanbul", "Ankara", "İzmir"};
+        var product1 = new Product();
+        product1.setName("Laptop");
 
-        for(String sehir: sehirler1){
-            System.out.println(sehir);
+        var product2 = new Product();
+        product2.setName("Telefon");
+
+        var urunler = new Product[]{product1,product2};
+
+        for (int i = 0; i < urunler.length; i++) {
+            System.out.println(urunler[i].getName());
         }
-
-        for(int i=0;i<3;i++){
-            System.out.println(sehirler1[1]);
-        }
-
     }
 }

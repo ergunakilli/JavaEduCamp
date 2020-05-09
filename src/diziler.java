@@ -1,19 +1,13 @@
 public class diziler {
     public static void main(String[] args){
-        for (int i=1; i<=10;i++){
-            System.out.println(i);
-        }
+        String[] sehirler1 = new String[]{"İstanbul", "Bursa", "Adana"};
 
-        var sayi = 10;
-        while (sayi<=100){
-            System.out.println(sayi);
-            sayi = sayi+10;
-        }
+        String[] sehirler2 = new String[]{"Antep", "Urfa", "Kastamonu"};
 
-        int sayi2 = 11;
-        do{
-            System.out.println(sayi2);
-            sayi2 = sayi2+10;
-        }while (sayi2>=100);
+        sehirler1 = sehirler2;
+        sehirler1[0] = "Paris";
+        System.out.println(sehirler2[0]); //Paris
+
+        //referans type, value type, stack-heap
     }
 }

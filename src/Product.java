@@ -27,3 +27,9 @@ public class Product {
         this.price = price;
     }
 }
+
+interface ProductInterface{
+    public static void calculate(){
+        System.out.println("Hesaplandı");
+    };
+}
